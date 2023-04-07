@@ -1,0 +1,19 @@
+@use "../abstracts" as a;
+
+h2,
+h3 {
+  color: #fff;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+
+  @include a.media-breakpoint-up(48em) {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.15rem;
+}

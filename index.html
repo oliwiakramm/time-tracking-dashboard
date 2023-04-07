@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        margin-top: 2rem;
+        font-size: 11px;
+        text-align: center;
+        color: #fff;
+      }
+      .attribution a {
+        color: hsl(348, 100%, 68%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="visually-hidden">Time tracking dashboard</h1>
+      <section class="dashboard">
+        <div class="dashboard__card person">
+          <div class="dashboard__person">
+            <img
+              src="images/image-jeremy.png"
+              alt="Jeremy Robson"
+              class="dashboard__img"
+            />
+            <div class="dashboard__personInfo">
+              <p class="dashboard__report">Report for</p>
+              <h2 class="dashboard__name">Jeremy Robson</h2>
+            </div>
+          </div>
+          <ul class="dashboard__list">
+            <li class="dashboard__item">
+              <button class="dashboard__btn" id="daily">Daily</button>
+            </li>
+            <li class="dashboard__item">
+              <button class="dashboard__btn active" id="weekly">Weekly</button>
+            </li>
+            <li class="dashboard__item">
+              <button class="dashboard__btn" id="monthly">Monthly</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="dashboard__card work">
+          <div class="dashboard__container">
+            <div class="dashboard__header">
+              <h3 class="dashboard__heading">Work</h3>
+              <svg
+                width="21"
+                height="5"
+                xmlns="http://www.w3.org/2000/svg"
+                class="dashboard__svg"
+              >
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="dashboard__hours">
+              <p class="dashboard__current">32hrs</p>
+              <p class="dashboard__previous">Last Week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard__card play">
+          <div class="dashboard__container">
+            <div class="dashboard__header">
+              <h3 class="dashboard__heading">Play</h3>
+              <svg
+                width="21"
+                height="5"
+                xmlns="http://www.w3.org/2000/svg"
+                class="dashboard__svg"
+              >
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="dashboard__hours">
+              <p class="dashboard__current">10hrs</p>
+              <p class="dashboard__previous">Last Week - 8hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard__card study">
+          <div class="dashboard__container">
+            <div class="dashboard__header">
+              <h3 class="dashboard__heading">Study</h3>
+              <svg
+                width="21"
+                height="5"
+                xmlns="http://www.w3.org/2000/svg"
+                class="dashboard__svg"
+              >
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="dashboard__hours">
+              <p class="dashboard__current">4hrs</p>
+              <p class="dashboard__previous">Last Week - 7hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard__card exercise">
+          <div class="dashboard__container">
+            <div class="dashboard__header">
+              <h3 class="dashboard__heading">Exercise</h3>
+              <svg
+                width="21"
+                height="5"
+                xmlns="http://www.w3.org/2000/svg"
+                class="dashboard__svg"
+              >
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="dashboard__hours">
+              <p class="dashboard__current">4hrs</p>
+              <p class="dashboard__previous">Last Week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard__card social">
+          <div class="dashboard__container">
+            <div class="dashboard__header">
+              <h3 class="dashboard__heading">Social</h3>
+              <svg
+                width="21"
+                height="5"
+                xmlns="http://www.w3.org/2000/svg"
+                class="dashboard__svg"
+              >
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="dashboard__hours">
+              <p class="dashboard__current">5hrs</p>
+              <p class="dashboard__previous">Last Week - 10hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard__card care">
+          <div class="dashboard__container">
+            <div class="dashboard__header">
+              <h3 class="dashboard__heading">Self Care</h3>
+              <svg
+                width="21"
+                height="5"
+                xmlns="http://www.w3.org/2000/svg"
+                class="dashboard__svg"
+              >
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="dashboard__hours">
+              <p class="dashboard__current">2hrs</p>
+              <p class="dashboard__previous">Last Week - 2hrs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/oliwiakramm">Hoshiko</a>.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

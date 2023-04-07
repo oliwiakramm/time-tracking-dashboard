@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+// Font Family
+$main-font: "Rubik", sans-serif;
+
+// Primary color
+$person-clr: hsl(246, 80%, 60%);
+$work-clr: hsl(15, 100%, 70%);
+$play-clr: hsl(195, 74%, 62%);
+$study-clr: hsl(348, 100%, 68%);
+$exercise-clr: hsl(145, 58%, 55%);
+$social-clr: hsl(264, 64%, 52%);
+$care-clr: hsl(43, 84%, 65%);
+
+// Neutral colors
+$bg-clr: hsl(226, 43%, 10%);
+$cardBg-clr: hsl(235, 46%, 20%);
+$txt1-clr: hsl(235, 45%, 61%);
+$txt2-clr: hsl(236, 100%, 87%);
+
+$transition: all 0.2s ease-in;
